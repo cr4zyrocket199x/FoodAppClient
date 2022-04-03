@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.cr4zyrocket.foodappclient.UI.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_changeInfo"
+        android:name="com.cr4zyrocket.foodappclient.UI.ChangeInfoFragment"
+        android:label="ChangeInfo"
+        tools:layout="@layout/fragment_change_info" />
+    <fragment
+        android:id="@+id/nav_myLocation"
+        android:name="com.cr4zyrocket.foodappclient.UI.MyLocationFragment"
+        android:label="MyLocation"
+        tools:layout="@layout/fragment_my_location" />
+</navigation>

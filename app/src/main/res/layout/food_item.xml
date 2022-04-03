@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="8dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="0dp"
+    android:layout_height="250dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_weight="10"
+            android:id="@+id/ivFoodImage"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/tvFoodName"
+                android:text="Food name"
+                android:textSize="20sp"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:ignore="NestedWeights" />
+<!--            <ImageView-->
+<!--                android:id="@+id/ivShare"-->
+<!--                android:src="@drawable/ic_baseline_share_24"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:tint="@color/colorAccent" />-->
+            <ImageView
+                android:id="@+id/ivFavorite"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:tint="@color/colorAccent" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tvFoodPrice"
+            android:text="100000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
