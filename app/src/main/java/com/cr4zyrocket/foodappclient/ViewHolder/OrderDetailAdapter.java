@@ -1,5 +1,6 @@
 package com.cr4zyrocket.foodappclient.ViewHolder;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,9 +27,11 @@ class OrderDetailViewHolder extends RecyclerView.ViewHolder{
 }
 
 public class OrderDetailAdapter extends RecyclerView.Adapter<OrderDetailViewHolder>{
+    Context context;
     List<Order> orders;
 
-    public OrderDetailAdapter(List<Order> orders) {
+    public OrderDetailAdapter( Context context,List<Order> orders) {
+        this.context=context;
         this.orders = orders;
     }
 
@@ -42,10 +45,10 @@ public class OrderDetailAdapter extends RecyclerView.Adapter<OrderDetailViewHold
     @Override
     public void onBindViewHolder(@NonNull OrderDetailViewHolder holder, int position) {
         Order order=orders.get(position);
-        String fn= "Food name: "+order.getFoodName();
-        String fq="Food quantity: "+order.getQuantity();
-        String fp="Food price: "+order.getPrice();
-        String fd="Food discount: "+order.getDiscount();
+        String fn= context.getResources().getString(R.string.foodName) +order.getFoodName();
+        String fq=context.getResources().getString(R.string.foodQuantity)+order.getQuantity();
+        String fp=context.getResources().getString(R.string.foodPrice)+order.getPrice();
+        String fd=context.getResources().getString(R.string.foodDiscount)+order.getDiscount();;
         holder.tvOrderFoodName.setText(fn);
         holder.tvOrderFoodQuantity.setText(fq);
         holder.tvOrderFoodPrice.setText(fp);

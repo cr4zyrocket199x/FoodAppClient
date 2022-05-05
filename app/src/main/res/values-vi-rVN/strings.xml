@@ -81,4 +81,14 @@
     <string name="t_accphone">Số điện thoại đăng ký</string>
     <string name="smsOTP">Mã OTP</string>
     <string name="leave_your_comment_here" translatable="false">Để lại bình luận của bạn ở đây:</string>
+    <string name="foodName">Tên món: </string>
+    <string name="foodQuantity">Số lượng: </string>
+    <string name="foodPrice">Đơn giá: </string>
+    <string name="foodDiscount">Giảm giá: </string>
+    <string name="orderID">Mã đơn:</string>
+    <string name="orderStatus">Trạng thái:</string>
+    <string name="orderAddress">Địa chỉ:</string>
+    <string name="orderPhone">Số điện thoại:</string>
+    <string name="orderComment">Bình luận:</string>
+    <string name="orderTotal">Tổng tiền:</string>
 </resources>

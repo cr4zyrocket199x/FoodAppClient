@@ -2,6 +2,7 @@ package com.cr4zyrocket.foodappclient.UI;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -154,7 +155,6 @@ public class HomeFragment extends Fragment {
         sliderLayout.setDuration(4000);
     }
     private void loadMenu(){
-
         adapter.startListening();
         recyclerMenu.setAdapter(adapter);
         srlHome.setRefreshing(false);

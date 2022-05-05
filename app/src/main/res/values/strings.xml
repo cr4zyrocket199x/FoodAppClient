@@ -97,4 +97,14 @@
     <string name="t_accphone">Account phone</string>
     <string name="smsOTP">SMS OTP</string>
     <string name="leave_your_comment_here" translatable="false">Leave your comment here:</string>
+    <string name="foodName">Food name: </string>
+    <string name="foodQuantity">Food quantity: </string>
+    <string name="foodPrice">Food price: </string>
+    <string name="foodDiscount">Food discount: </string>
+    <string name="orderID">Order ID:</string>
+    <string name="orderStatus">Order status:</string>
+    <string name="orderAddress">Order address:</string>
+    <string name="orderPhone">Order phone:</string>
+    <string name="orderComment">Order comment:</string>
+    <string name="orderTotal">Order total:</string>
 </resources>

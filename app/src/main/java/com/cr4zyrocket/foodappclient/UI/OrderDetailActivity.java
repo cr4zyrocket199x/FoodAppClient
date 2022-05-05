@@ -43,18 +43,18 @@ public class OrderDetailActivity extends AppCompatActivity {
         if (getIntent()!=null){
             order_id_value=getIntent().getStringExtra("OrderID");
         }
-        String orID="Order ID: "+order_id_value;
-        String orP= "Order phone: "+phone;
-        String orA="Order address: "+Common.currentRequest.getAddress();
-        String orT="Order Total: "+Common.currentRequest.getTotal();
-        String orC="Order comment: "+Common.currentRequest.getComment();
+        String orID=getString(R.string.orderID)+order_id_value;
+        String orP= getString(R.string.orderPhone)+phone;
+        String orA=getString(R.string.orderAddress)+Common.currentRequest.getAddress();
+        String orT=getString(R.string.orderTotal)+Common.currentRequest.getTotal();
+        String orC=getString(R.string.orderComment)+Common.currentRequest.getComment();
         tvOrderID.setText(orID);
         tvOrderPhone.setText(orP);
         tvOrderAddress.setText(orA);
         tvOrderTotal.setText(orT);
         tvOrderComment.setText(orC);
 
-        OrderDetailAdapter adapter=new OrderDetailAdapter(Common.currentRequest.getFoodOrdered());
+        OrderDetailAdapter adapter=new OrderDetailAdapter(this,Common.currentRequest.getFoodOrdered());
         adapter.notifyDataSetChanged();
         rvListFood.setAdapter(adapter);
     }

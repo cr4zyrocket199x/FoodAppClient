@@ -64,11 +64,11 @@ public class OrderStatusActivity extends AppCompatActivity {
         adapter=new FirebaseRecyclerAdapter<Request, OrderViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull OrderViewHolder holder, int position, @NonNull final Request model) {
-                String orID= "Order ID: "+adapter.getRef(position).getKey();
-                String orS= "Order status: "+Common.convertCodeToStatus(model.getStatus());
-                String orA="Order address: "+model.getAddress();
-                String orP="Order phone: "+model.getPhone();
-                String orC="Order comment: "+model.getComment();
+                String orID= getString(R.string.orderID)+adapter.getRef(position).getKey();
+                String orS= getString(R.string.orderStatus)+Common.convertCodeToStatus(model.getStatus());
+                String orA=getString(R.string.orderAddress)+model.getAddress();
+                String orP=getString(R.string.orderPhone)+model.getPhone();
+                String orC=getString(R.string.orderComment)+model.getComment();
                 holder.tvOrderID.setText(orID);
                 holder.tvOrderStatus.setText(orS);
                 holder.tvOrderAddress.setText(orA);

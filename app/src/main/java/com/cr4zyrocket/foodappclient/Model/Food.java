@@ -1,6 +1,6 @@
 package com.cr4zyrocket.foodappclient.Model;
 
-public class Food {
+public class Food{
     private String Name,Image,Description,Price,Discount,CategoryID;
 
     public Food() {

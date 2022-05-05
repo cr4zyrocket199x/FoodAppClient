@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/dark_background"
-    tools:context=".AddInfoFacebookLogin">
+    tools:context=".UI.AddInfoFacebookLogin">
     <LinearLayout
         android:gravity="center"
         android:padding="10dp"

@@ -53,7 +53,6 @@ public class CartActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         tvTotal=findViewById(R.id.tvTotal);
         btnOrderPlace=findViewById(R.id.btnPlaceOrder);
-
         loadListFoodOrder();
         btnOrderPlace.setOnClickListener(v -> {
             if (total==0)
